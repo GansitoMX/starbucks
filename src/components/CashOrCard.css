@@ -1,0 +1,36 @@
+.cash-or-card1 {
+    padding-top: 6.4rem;
+}
+
+.bg-greenlight {
+    background-color: #f2f0eb;
+}
+
+.sb-content-column {
+    max-width: 1440px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: initial;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sb-content-columnInner {
+    box-sizing: border-box;
+}
+
+.text-centered-h2 {
+    width: 50%;
+    padding-bottom: 6.4rem;
+    margin-left: 25%;
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+.sb-heading {
+    font-weight: 600;
+    font-size: 28px;
+    padding-top: 0;
+    padding-bottom: 1.6rem;
+    
+}

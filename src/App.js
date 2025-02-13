@@ -5,6 +5,7 @@ import StickyHeader from './components/StickyHeader'
 import Steps from './components/Steps'
 import Getfavorites from './components/GetFavorites'
 import LearnMoreSection from './components/LearnMoreSection'
+import CashOrCard from './components/CashOrCard'
 
 class App extends Component {
     render() {
@@ -16,6 +17,7 @@ class App extends Component {
               <Steps />
               <Getfavorites />
               <LearnMoreSection />
+              <CashOrCard />
             </div>
         )
     }

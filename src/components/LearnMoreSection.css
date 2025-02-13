@@ -14,14 +14,17 @@
 }
 
 .heading-text-semibold {
-    font-weight: 600;
+    font-weight: 700;
+
 }
 
 .text-centered-p {
-    padding-top: 1.6rem;
+    padding-top: 1.1rem;
     text-align: center;
     font-weight: 500;
     font-size: 1.1rem;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .multiThumbnailsRow {
@@ -92,7 +95,9 @@
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
     color: #006241;
-    text-decoration: underline;    
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: 500;   
 }
 
 /*Modal*/
