@@ -1,0 +1,145 @@
+.global-get-favorites {
+    padding-bottom: 6.4rem;
+    padding-top: 2.4rem;
+    background-color: #f1f7f5;
+    text-align: center;
+}
+
+.px3 {
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+}
+
+.sb-heading {
+    line-height: 1.385;
+    padding-bottom: 4.8rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Contenedor de Tabs */
+.tab-list {
+    display: flex;
+    max-width: 540px;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;  
+}
+
+/* Estilo de los botones de Tabs */
+.sbtabs-1 {
+    position: relative;
+    padding: 1rem 1.2rem;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    outline: none;
+}
+
+/* Color activo de la pestaña */
+.sbtabs-1[aria-selected="true"] {
+    color: #00754a; /* Verde principal */
+    font-weight: bold;
+}
+
+/* Efecto del slider solo en el tab activo */
+.sbtabs-1[aria-selected="true"] .slider {
+    display: block;
+}
+
+.sbtabs-1 .slider {
+    display: none;
+    width: 100%;
+    background-color: #00754a;
+    bottom: 0;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Estilos adicionales */
+.text-md {
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: Helvetica, Helvetica, Arial, sans-serif;
+
+}
+
+button {
+    cursor: pointer;
+    text-transform: none;
+    border: none;
+    color: inherit;
+    background: none;
+}
+
+.color-gold {
+    color: #cba258;
+}
+
+.hiddenVisually {
+    border: 0 !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.bg-green {
+    background-color: #d4e9e2;
+    
+}
+
+/* Contenedor de la imagen y el h3 alineados */
+.tab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+
+/* Ajuste de imagen */
+.tab-image {
+    height: auto;
+    width: 30%;
+}
+
+/* Texto alineado con la imagen */
+.sb-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 0%;
+}
+
+/* Párrafo debajo, alineado */
+.p-tabs1 {
+    max-width: 400px;
+    padding-top: 0%;
+}
+
+.tab-justify-center {
+    box-shadow: inset 0 7px 9px -7px #00000024;
+    padding-bottom: 3.2rem;
+    padding-top: 3.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-sizing: inherit;
+
+}
+
+.tab-content-section {
+    text-align: left;
+
+}

@@ -1,0 +1,182 @@
+.learn-more-global {
+    padding-top: 7.4rem;
+    padding-bottom: 7.4rem;
+}
+
+.content-columnInner{
+    box-sizing: border-box;
+}
+
+.text-centered {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;    
+}
+
+.heading-text-semibold {
+    font-weight: 600;
+}
+
+.text-centered-p {
+    padding-top: 1.6rem;
+    text-align: center;
+}
+
+.multiThumbnailsRow {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5vw;
+    padding-top: 48px;
+
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 33.3333%;
+    padding-bottom: 0;
+    margin-right: 2.4rem;
+
+}
+
+.image-cursor-pointer {
+    margin: 0 auto;
+    padding-bottom: 2.4rem;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.card-image {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+    height: auto;
+    max-width: 50%;
+    border: 0;
+    cursor: pointer;
+
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.card-content-text {
+    text-align: center;
+
+}
+
+.hiddenVisually {
+    border: 0 !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.text-link {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    color: #006241;
+    text-decoration: underline;    
+}
+
+/*Modal*/
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal-description {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    background: gray;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #00754a;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #00754a;
+}
+
+.ok-button {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto 0;
+}
+
