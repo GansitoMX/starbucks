@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './LearnMoreSection.css';
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import { GoX } from "react-icons/go";
 
 const LearnMoreSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -86,22 +88,19 @@ const LearnMoreSection = () => {
             {isModalOpen && (
                 <div className="modal-overlay">
                     <div className="modal-content">
-                        <button className="close-button" onClick={closeModal}>X</button>
+                        <button className="close-button" onClick={closeModal}><GoX /></button>
                         <img className="modal-image" src={cards[activeCard].carousel[currentSlide].img} alt="carousel" />
                         <h3 className="modal-title">{cards[activeCard].carousel[currentSlide].title}</h3>
                         <p className="modal-description">{cards[activeCard].carousel[currentSlide].text}</p>
                         <div className="modal-controls">
-                            <button className="arrow" onClick={prevSlide}></button>
+                            <button className="arrow" onClick={prevSlide}><SlArrowLeft /></button>
                             <div className="dots">
                                 {cards[activeCard].carousel.map((_, index) => (
                                     <span key={index} className={`dot ${index === currentSlide ? "active" : ""}`} />
                                 ))}
                             </div>
-                            <button className="arrow" onClick={nextSlide}>▶</button>
+                            <button className="arrow" onClick={nextSlide}><SlArrowRight /></button>
                         </div>
-                        {currentSlide === cards[activeCard].carousel.length - 1 && (
-                            <button className="ok-button" onClick={closeModal}>OK</button>
-                        )}
                     </div>
                 </div>
             )}

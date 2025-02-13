@@ -20,12 +20,14 @@
 .text-centered-p {
     padding-top: 1.6rem;
     text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .multiThumbnailsRow {
     display: flex;
     flex-direction: row;
-    margin: 0 5vw;
+    margin: 0 12vw;
     padding-top: 48px;
 
 }
@@ -35,7 +37,7 @@
     flex-direction: column;
     width: 33.3333%;
     padding-bottom: 0;
-    margin-right: 2.4rem;
+    margin-right: 1rem;
 
 }
 
@@ -71,6 +73,8 @@
 
 .card-content-text {
     text-align: center;
+    padding-left: 55px;
+    padding-right: 55px;
 
 }
 
@@ -147,8 +151,8 @@
 }
 
 .dot {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     margin: 0 5px;
     background: gray;
     border-radius: 50%;
@@ -160,11 +164,17 @@
 }
 
 .arrow {
-    background: none;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    overflow: visible;
     border: none;
-    font-size: 1.2rem;
     cursor: pointer;
-    color: #00754a;
+    border-radius: 50%;
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.arrow:hover {
+    background: #dddddd; 
 }
 
 .ok-button {
@@ -180,3 +190,15 @@
     margin: 20px auto 0;
 }
 
+.close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 60px;
+    min-height: 60px;
+    transition-duration: 0.5s;
+}
+
+.close-button:hover {
+    transform: scale(1.5);
+}
