@@ -29,8 +29,72 @@
 
 .sb-heading {
     font-weight: 600;
-    font-size: 28px;
-    padding-top: 0;
-    padding-bottom: 1.6rem;
+}
+
+.grid {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.gridItem1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    width: 16.66667%;
+    padding-bottom: 0;
+}
+
+.text-semibold {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.grid-image {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 0;
+    width: 33.33333%;
+    padding-bottom: 0;
     
+}
+
+.flex-md {
+    display: flex;
+    text-align: left;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+
+}
+
+.image-cellphone {
+    max-width: 128px;
+    margin: 0;
+    flex-shrink: 0;
+
+}
+
+.sb-image {
+    height: auto;
+    max-width: 80%;
+    border: 0;
+}
+
+.card-content-textleft {
+   text-align: left; 
+}
+
+.separador {
+    height: 2px;
+    background-color: rgba(228, 222, 222, 0.726);
+    margin: 50px 0;
+    border: 0;
 }
