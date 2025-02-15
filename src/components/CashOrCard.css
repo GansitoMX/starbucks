@@ -13,6 +13,8 @@
     box-sizing: initial;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .sb-content-columnInner {
@@ -23,12 +25,11 @@
     width: 50%;
     padding-bottom: 6.4rem;
     margin-left: 25%;
-    margin-bottom: 2.4rem;
     text-align: center;
 }
 
 .sb-heading {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .grid {
@@ -97,4 +98,14 @@
     background-color: rgba(228, 222, 222, 0.726);
     margin: 50px 0;
     border: 0;
+}
+
+.pt3 {
+
+    font-weight: 400;
+    font-size: 1.08rem;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 
+    'Cantarell', 'Fira Sans', 'Droid Sans', 
+    'Helvetica Neue', sans-serif;
 }
