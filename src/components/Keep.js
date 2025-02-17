@@ -46,7 +46,7 @@ class Keep extends Component {
                                         </li>
                                         <li className='content-container'>
                                             <div className='image-container-center'>
-                                                <img className='imageContainer' src='public\images\delta-skymiles.png' alt='Delta Skymiles' />
+                                                <img className='imageContainer' src='\images\bank-of-america.png' alt='Delta Skymiles' />
                                             </div>
                                             <p className='p-under-image'>
                                                 <a 
@@ -66,11 +66,11 @@ class Keep extends Component {
                                                 href='https://www.starbucks.com/rewards#deltaSkymilesTermsDescriptionId'>
                                                     <sup>1</sup>
                                                 </a>
-                                            </p>                                            
+                                            </p>                                           
                                         </li>
                                         <li className='content-container'>
                                             <div className='image-container-center'>
-                                                <img className='imageContainer' src='public\images\delta-skymiles.png' alt='Delta Skymiles' />
+                                                <img className='imageContainer' src='\images\marriott-logo.png' alt='Delta Skymiles' />
                                             </div>
                                             <p className='p-under-image'>
                                                 <a 
