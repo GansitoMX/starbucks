@@ -7,6 +7,7 @@ import Getfavorites from './components/GetFavorites'
 import LearnMoreSection from './components/LearnMoreSection'
 import CashOrCard from './components/CashOrCard'
 import Keep from './components/Keep'
+import Questions from './components/Questions'
 
 class App extends Component {
     render() {
@@ -20,6 +21,7 @@ class App extends Component {
               <LearnMoreSection />
               <CashOrCard />
               <Keep />
+              <Questions />
             </div>
         )
     }

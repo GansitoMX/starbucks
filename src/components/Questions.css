@@ -1,0 +1,33 @@
+.q-section {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+}
+
+.sb-content-column {
+    max-width: 1440px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.content-column-inner {
+    box-sizing: border-box;
+
+}
+
+.offset {
+    width: 50%;
+    margin-left: 16.66667%;
+
+}
+
+.sb-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.pb3 {
+    padding-bottom: 1.6rem;
+}
