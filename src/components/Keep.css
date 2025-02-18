@@ -39,9 +39,10 @@
 }
 
 .sb-heading-h2 {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.4rem;
     line-height: 1.385;
-    padding-top: 1.6rem;
+    padding-top: 1rem;
     text-align: center;
 
 }
@@ -49,6 +50,12 @@
 .text-center-p3 {
     padding-top: 1.6rem;
     text-align: center;
+    font-weight: 400;
+    font-size: 1.08rem;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 
+    'Cantarell', 'Fira Sans', 'Droid Sans', 
+    'Helvetica Neue', sans-serif;
 
 }
 
@@ -58,7 +65,7 @@
     justify-content: center;
     list-style: none;
     margin: 0;    
-    padding: 32px 50px 32px 50px;   
+    padding: 32px 180px 32px 180px;   
 }
 
 .content-container {
@@ -88,8 +95,9 @@
 
  .p-under-image {
     text-align: center;
-    padding-top: 2.4rem;
+    padding-top: 1rem;
     padding-left: 0;
+    width: 87%;
 
  }
 
@@ -102,8 +110,9 @@
  }
 
  .text-link {
-    line-height: .5px;
- }
+    line-height: normal;
+    margin: 0;
+}
 
  .icon-link {
     width: 18px;
@@ -116,4 +125,19 @@
 .text-noUnderLine {
     text-decoration: none;
     color: #000;
+}
+
+.btn-text-center {
+    text-align: center;
+
+}
+
+.join-button {
+    min-width: 35px;
+    min-height: 35px;
+    background-color: #00754a;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+
 }

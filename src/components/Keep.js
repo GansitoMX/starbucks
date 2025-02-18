@@ -54,12 +54,13 @@ class Keep extends Component {
                                                 className='external-links' 
                                                 href='https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042' 
                                                 target='_blank'
-                                                rel='noopener noreferrer'><span className='text-link'>Link your Delta SkyMiles®</span>
+                                                rel='noopener noreferrer'><span className='text-link'>Link your Bank of America®</span>
                                                 <svg className='icon-link'><GoLinkExternal/></svg>
                                                 </a>
-                                                and Starbucks® Rewards accounts to earn 
-                                                miles on Starbucks Card reloads of $25 
-                                                or more, plus Double Stars on travel days.
+                                                eligible card and Starbucks® 
+                                                Rewards account to earn 2% Cash 
+                                                Back and Bonus Stars on qualifying 
+                                                Starbucks in-app purchases.
                                                 <a 
                                                 aria-labelledby='disclaimerTitleId' 
                                                 className='text-noUnderLine' 
@@ -78,12 +79,12 @@ class Keep extends Component {
                                                 className='external-links' 
                                                 href='https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042' 
                                                 target='_blank'
-                                                rel='noopener noreferrer'><span className='text-link'>Link your Delta SkyMiles®</span>
+                                                rel='noopener noreferrer'><span className='text-link'>Link your Marriott Bonvoy®</span>
                                                 <svg className='icon-link'><GoLinkExternal/></svg>
                                                 </a>
                                                 and Starbucks® Rewards accounts to earn 
-                                                miles on Starbucks Card reloads of $25 
-                                                or more, plus Double Stars on travel days.
+                                                Double Stars during eligible stays, points 
+                                                during any Marriott Bonvoy Week and more.
                                                 <a 
                                                 aria-labelledby='disclaimerTitleId' 
                                                 className='text-noUnderLine' 
@@ -93,6 +94,11 @@ class Keep extends Component {
                                             </p>                                            
                                         </li>
                                     </ul>
+                                    <div className='btn-text-center'>
+                                        <div className='hiddenVisually'>
+                                            <a href='https://www.starbucks.com/account/create'  className='join-button'>Join Starbucks® Rewards</a>
+                                        </div>
+                                    </div>
                                 </div>                                
                             </div>
                         </div>
