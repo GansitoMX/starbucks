@@ -3,6 +3,7 @@
     background-image: url(https://www.starbucks.com/app-assets/844262945b2a8b8cfb29.png);
     background-size: cover;
     scroll-margin-top: 51px;
+    padding: 3.2rem;
 }
 
 .inner-box {
@@ -84,3 +85,35 @@
     border: 0;
 
  }
+
+ .p-under-image {
+    text-align: center;
+    padding-top: 2.4rem;
+    padding-left: 0;
+
+ }
+
+ .external-links {
+    display: inline-flex;
+    align-items: center;
+    color: #006241;
+    background-color: initial;
+
+ }
+
+ .text-link {
+    line-height: .5px;
+ }
+
+ .icon-link {
+    width: 18px;
+    height: 18px;
+    overflow: visible;
+    fill: rgb(0 117 74);
+    vertical-align: middle;
+ }
+
+.text-noUnderLine {
+    text-decoration: none;
+    color: #000;
+}

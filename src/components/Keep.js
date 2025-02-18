@@ -31,7 +31,7 @@ class Keep extends Component {
                                                 href='https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042' 
                                                 target='_blank'
                                                 rel='noopener noreferrer'><span className='text-link'>Link your Delta SkyMiles®</span>
-                                                <svg><GoLinkExternal/></svg>
+                                                <svg className='icon-link'><GoLinkExternal/></svg>
                                                 </a>
                                                 and Starbucks® Rewards accounts to earn 
                                                 miles on Starbucks Card reloads of $25 
@@ -55,7 +55,7 @@ class Keep extends Component {
                                                 href='https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042' 
                                                 target='_blank'
                                                 rel='noopener noreferrer'><span className='text-link'>Link your Delta SkyMiles®</span>
-                                                <svg><GoLinkExternal/></svg>
+                                                <svg className='icon-link'><GoLinkExternal/></svg>
                                                 </a>
                                                 and Starbucks® Rewards accounts to earn 
                                                 miles on Starbucks Card reloads of $25 
@@ -79,7 +79,7 @@ class Keep extends Component {
                                                 href='https://www.deltastarbucks.com/content/starbucks/en/overview.html?mkcpgn=dipd-sbux7042' 
                                                 target='_blank'
                                                 rel='noopener noreferrer'><span className='text-link'>Link your Delta SkyMiles®</span>
-                                                <svg><GoLinkExternal/></svg>
+                                                <svg className='icon-link'><GoLinkExternal/></svg>
                                                 </a>
                                                 and Starbucks® Rewards accounts to earn 
                                                 miles on Starbucks Card reloads of $25 
