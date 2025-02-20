@@ -9,6 +9,7 @@ import CashOrCard from './components/CashOrCard'
 import Keep from './components/Keep'
 import Questions from './components/Questions'
 import TermsConditions from './components/TermsConditions'
+import Footer from './components/Footer'
 
 class App extends Component {
     render() {
@@ -24,6 +25,7 @@ class App extends Component {
               <Keep />
               <Questions />
               <TermsConditions />
+              <Footer />
             </div>
         )
     }

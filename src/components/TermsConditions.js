@@ -89,7 +89,7 @@ class TermsConditions extends Component {
                             <div className="md-flex-text">
                                 <div className="earning-stars">
                                     <div className="earning-stars-content">
-                                        <h3 className="sb-heading">Earning Stars</h3>
+                                        <h3 className="sb-heading-tc">Earning Stars</h3>
                                         <p className="es-content">
                                             Stars cannot be earned on purchases of alcohol,
                                             Starbucks Cards or Starbucks Card reloads.
@@ -117,7 +117,7 @@ class TermsConditions extends Component {
                                         </p>
                                     </div>
                                     <div>
-                                        <h3 className="sb-heading">Benefits</h3>
+                                        <h3 className="sb-heading-tc">Benefits</h3>
                                         <p className="es-content">Free refills
                                             available during same in-store
                                             visit only. To qualify for the
@@ -129,7 +129,7 @@ class TermsConditions extends Component {
                                 </div>
                                 <div className="termsOfUse">
                                     <div className="termsOfUse-content">
-                                        <h3 className="sb-heading">Terms of Use</h3>
+                                        <h3 className="sb-heading-tc">Terms of Use</h3>
                                         <p className="es-content">For full program details visit <a
                                             aria-label='starbucks.com/rewards/terms, opens in new window'
                                             className='external-links'
@@ -155,7 +155,7 @@ class TermsConditions extends Component {
                                         </p>                                        
                                     </div>
                                     <div>
-                                    <h3 className="sb-heading">Redeeming Rewards</h3>
+                                    <h3 className="sb-heading-tc">Redeeming Rewards</h3>
                                     <p className="es-content">
                                     Rewards cannot be redeemed for alcoholic 
                                     beverages or multi-serve items. You pay 
