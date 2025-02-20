@@ -127,6 +127,46 @@ class TermsConditions extends Component {
                                         </p>
                                     </div>
                                 </div>
+                                <div className="termsOfUse">
+                                    <div className="termsOfUse-content">
+                                        <h3 className="sb-heading">Terms of Use</h3>
+                                        <p className="es-content">For full program details visit <a
+                                            aria-label='starbucks.com/rewards/terms, opens in new window'
+                                            className='external-links'
+                                            href='https://www.starbucks.com/rewards/terms/'
+                                            target='_blank'
+                                            rel='noopener noreferrer'><span className='text-link'>starbucks.com/rewards/terms</span>
+                                            <svg className='icon-link'><GoLinkExternal /></svg>
+                                        </a>
+                                            .
+                                        </p>
+                                        <p className="es-content">Starbucks® Rewards
+                                            benefits are available at participating
+                                            Starbucks stores. Not all stores have the
+                                            ability to honor Rewards at this time. Visit the <a
+                                                aria-label='Starbucks Store Locator, opens in new window'
+                                                className='external-links'
+                                                href='https://www.starbucks.com/store-locator'
+                                                target='_blank'
+                                                rel='noopener noreferrer'><span className='text-link'>Starbucks Store Locator</span>
+                                                <svg className='icon-link'><GoLinkExternal /></svg>
+                                            </a>
+                                            and search for locations honoring “Redeem Rewards”.
+                                        </p>                                        
+                                    </div>
+                                    <div>
+                                    <h3 className="sb-heading">Redeeming Rewards</h3>
+                                    <p className="es-content">
+                                    Rewards cannot be redeemed for alcoholic 
+                                    beverages or multi-serve items. You pay 
+                                    the difference for any beverage customization 
+                                    over $1 and/or merchandise item over $20. Not 
+                                    all stores honor tiered Rewards. Select stores 
+                                    redeem 200 Stars for free food or drink items 
+                                    only.
+                                    </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
