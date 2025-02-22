@@ -11,8 +11,7 @@ class Footer extends Component {
     render() {
         return (
             <footer className="bg-white-footer">
-                <nav className="footer-max">
-                    <div className="d-separator">
+                <nav className="footer-max">                    
                         <hr aria-hidden='true' className="separador"></hr>
                         <ul class="social-icons-flex">
                             <li className="sm-mr1">
@@ -46,7 +45,6 @@ class Footer extends Component {
                                 </a>
                             </li>
                         </ul>
-                    </div>
                 </nav>
             </footer>
         )
