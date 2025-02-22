@@ -23,23 +23,30 @@
 }
 
 .sm-mr1{
-    margin-right: .2rem;
+    margin-right: .4rem;
 
 }
 
 .icon-button {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 40px;
+    min-height: 40px;
     display: inline-block;
     position: relative;
-    color: #000;
-    background: initial;
-
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1;
 }
 
-.icon-sm{
-    width: 40px;
-    height: 40px;
-    
+.icon-sm {
+    width: 17px;
+    height: 17px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centra exactamente */
+    vertical-align: middle;
+    z-index: 2;
 }
 
