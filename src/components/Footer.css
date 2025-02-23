@@ -19,7 +19,7 @@
     margin-left: -5px;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 2.4rem;
 }
 
 .sm-mr1{
@@ -48,5 +48,28 @@
     transform: translate(-50%, -50%); /* Centra exactamente */
     vertical-align: middle;
     z-index: 2;
+}
+
+.inline-block-links {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 2.4rem;
+    margin-bottom: .4rem;
+    margin-top: 1.6rem;
+
+}
+.secondary-link{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    margin-bottom: .4rem;
+
+}
+
+.color-soft-black {
+    color: #797878;
 }
 

@@ -45,6 +45,30 @@ class Footer extends Component {
                                 </a>
                             </li>
                         </ul>
+                        <ul className="inline-block-links">
+                            <li>
+                                <a className="secondary-link">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a className="secondary-link">Consumer Health Privacy Notice</a>
+                            </li>
+                            <li>
+                                <a className="secondary-link">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a className="secondary-link">Do Not Share My Personal Information</a>
+                            </li>
+                            <li>
+                                <a className="secondary-link">CA Supply Chain Act</a>
+                            </li>
+                            <li>
+                                <a className="secondary-link">Accessibility</a>
+                            </li>
+                            <li>
+                                <a className="secondary-link">Cookie Preferences</a>
+                            </li>
+                        </ul>
+                        <p className="color-soft-black">This page is for practice only, not make references to the original web page Starbucks Rewards</p>
                 </nav>
             </footer>
         )
