@@ -47,28 +47,28 @@ class Footer extends Component {
                         </ul>
                         <ul className="inline-block-links">
                             <li>
-                                <a className="secondary-link">Privacy Policy</a>
+                                <a className="secondary-link" href="https://www.starbucks.com/terms/privacy-notice/">Privacy Policy</a>
                             </li>
                             <li>
-                                <a className="secondary-link">Consumer Health Privacy Notice</a>
+                                <a className="secondary-link" href="https://www.starbucks.com/terms/privacy-notice/">Consumer Health Privacy Notice</a>
                             </li>
                             <li>
-                                <a className="secondary-link">Terms of Use</a>
+                                <a className="secondary-link" href="https://www.starbucks.com/terms/privacy-notice/">Terms of Use</a>
                             </li>
                             <li>
-                                <a className="secondary-link">Do Not Share My Personal Information</a>
+                                <a className="secondary-link" href="https://www.starbucks.com/terms/privacy-notice/">Do Not Share My Personal Information</a>
                             </li>
                             <li>
-                                <a className="secondary-link">CA Supply Chain Act</a>
+                                <a className="secondary-link" href="https://www.starbucks.com/terms/privacy-notice/">CA Supply Chain Act</a>
                             </li>
                             <li>
-                                <a className="secondary-link">Accessibility</a>
+                                <a className="secondary-link" href="https://www.starbucks.com/terms/privacy-notice/">Accessibility</a>
                             </li>
                             <li>
-                                <a className="secondary-link">Cookie Preferences</a>
+                                <a className="secondary-link" href="https://www.starbucks.com/terms/privacy-notice/">Cookie Preferences</a>
                             </li>
                         </ul>
-                        <p className="color-soft-black">This page is for practice only, not make references to the original web page Starbucks Rewards</p>
+                        <p className="color-soft-black" href="https://www.starbucks.com/terms/privacy-notice/">This page is for practice only, not make references to the original web page Starbucks Rewards</p>
                 </nav>
             </footer>
         )
