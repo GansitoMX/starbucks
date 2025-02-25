@@ -5,8 +5,8 @@
     padding-right: 10rem;
     align-items: center;
     font-weight: 700;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #fff;
     color: #000;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
@@ -54,11 +54,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 .list-item{
     display: flex;
     margin-left: 0;
     align-items: center;
+    text-decoration: none;
 
 }
 
@@ -83,6 +85,7 @@
     align-self: stretch;
 }
 .a-flex{
+    color: #1e3932;
     display: inline-block;
     padding-right: 1.6rem;
     font-weight: 600;
@@ -126,15 +129,6 @@
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
 .sticky-header {
     display: flex;
     align-items: center;   
@@ -147,11 +141,6 @@
     z-index: 3;
     font-weight: 700;
 }
-
-.navbar-logo {
-    margin-right: 20px;
-}
-
 .header-container {
     display: block;
     position: relative;
