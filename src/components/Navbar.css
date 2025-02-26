@@ -162,6 +162,7 @@
     }
   }
 
+
 .sticky-header {
     display: flex;
     align-items: center;   
@@ -173,4 +174,5 @@
     top: 0;
     z-index: 3;
     font-weight: 700;
+    box-shadow:  4px 4px 0 #0000001f,0 0 2px 0 #0000003d;
 }
