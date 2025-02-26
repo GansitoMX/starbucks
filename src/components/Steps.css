@@ -1,214 +1,155 @@
-/*.heading {
-    font-weight: 600;
-    font-size: 2rem;
-    font-family: Helvetica, Helvetica, Arial, sans-serif;
-}
-
 .container-layout {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .content-column {
-    max-width: fit-content;
-    padding-left: 0;
-    padding-right: 0;
+  max-width: fit-content;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto; /* Centrado general */
 }
 
 .content-column-inner {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .size-12 {
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
 }
 
-.multiThumbnailsRow {
-    display: flex;
-    padding-top: 48px;
-    flex-direction: row;
-    margin: 0 10vw;
-
+.heading {
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
 }
 
-ol {
-    list-style: none;
-    padding: 0;
+.text-center {
+  margin: 0;
+}
+
+.multiThumbnailsRow-ole {
+  display: flex;
+  padding-top: 48px;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
 }
 
 .card-1 {
-    display: flex;
-    flex-direction: column;
-    width: 33.3333%;
-    padding-bottom: 0;
-    margin-right: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 33.3333%;
+  padding-bottom: 0;
+  margin-right: 3.5rem;
 }
 
 .image-center {
-    margin: 0 auto;
-    padding-bottom: 2.4rem;
-    flex-shrink: none;
-    text-align: center;
+  margin: 0 auto;
+  padding-bottom: 2.4rem;
+  flex-shrink: 0;
+  text-align: center;
 }
 
 .sb-imageFade__show {
-    height: auto;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .card-content {
-    text-align: center;
-
+  text-align: center;
 }
 
 .header-card {
-    font-weight: 600;
-    font-family: Helvetica, Helvetica, Arial, sans-serif;
-    
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
 }
 
 .pt3 {
-    padding-top: 0;
-    font-size: 1.2rem;
-    font-family: Helvetica, Helvetica, Arial, sans-serif;
-    line-height: 1.5rem;
-
+  padding-top: 0.5rem; /* Espacio superior ligero para mejor separación */
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5rem;
+  margin: 0 auto; /* Centrado del párrafo */
+  max-width: 90%; /* Limita el ancho para mejor legibilidad */
 }
 
 .colorGreen {
-    color: #006241;
-}*/
+  color: #006241;
+  text-decoration: none;
+}
 
-/* Steps.css */
-.container-layout {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  
-  .content-column {
-    max-width: fit-content;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  .content-column-inner {
-    box-sizing: border-box;
-  }
-  
-  .size-12 {
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-  }
-  
-  .heading {
-    font-weight: 600;
-    font-size: 2rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-  }
-  
-  .text-center {
-    margin: 0;
-  }
-  
+/* Responsividad optimizada */
+@media (max-width: 1024px) {
   .multiThumbnailsRow {
-    display: flex;
-    padding-top: 48px;
-    flex-direction: row;
-    margin: 0 10vw;
-    list-style: none;
-    padding: 0;
+      margin: 0 4vw;
   }
-  
+
   .card-1 {
-    display: flex;
-    flex-direction: column;
-    width: 33.3333%;
-    padding-bottom: 0;
-    margin-right: 3.5rem;
-  }
-  
-  .image-center {
-    margin: 0 auto;
-    padding-bottom: 2.4rem;
-    flex-shrink: 0;
-    text-align: center;
-  }
-  
-  .sb-imageFade__show {
-    height: auto;
-    max-width: 100%;
-  }
-  
-  .card-content {
-    text-align: center;
-  }
-  
-  .header-card {
-    font-weight: 600;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-  }
-  
-  .pt3 {
-    padding-top: 0;
-    font-size: 1.2rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.5rem;
-    margin: 0;
-  }
-  
-  .colorGreen {
-    color: #006241;
-    text-decoration: none;
-  }
-  
-  /* Responsividad */
-  @media (max-width: 1024px) {
-    .multiThumbnailsRow {
-      margin: 0 5vw;
-    }
-  
-    .card-1 {
       margin-right: 2rem;
-    }
   }
-  
-  @media (max-width: 768px) {
-    .size-12 {
+
+  .pt3 {
+      max-width: 95%; /* Ajuste para pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .size-12 {
       width: 80%;
       margin-left: 10%;
-    }
-  
-    .multiThumbnailsRow {
+  }
+
+  .multiThumbnailsRow {
       flex-direction: column;
       align-items: center;
       margin: 0;
-    }
-  
-    .card-1 {
-      width: 80%;
-      margin-right: 0;
-      margin-bottom: 2rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .heading {
-      font-size: 1.5rem;
-    }
-  
-    .pt3 {
-      font-size: 1rem;
-      line-height: 1.3rem;
-    }
-  
-    .size-12 {
-      width: 90%;
-      margin-left: 5%;
-    }
   }
 
+  .card-1 {
+      width: 90%; /* Más ancho para mejor uso del espacio */
+      margin-right: 0;
+      margin-bottom: 2.5rem; /* Más espacio entre tarjetas */
+  }
+
+  .pt3 {
+      font-size: 1.1rem; /* Ligeramente más pequeño */
+      line-height: 1.4rem;
+      max-width: 85%; /* Ajuste para mejor centrado */
+  }
+}
+
+@media (max-width: 480px) {
+  .container-layout {
+      padding-top: 40px; /* Reducimos padding en pantallas pequeñas */
+      padding-bottom: 40px;
+  }
+
+  .size-12 {
+      width: 90%;
+      margin-left: 5%;
+  }
+
+  .heading {
+      font-size: 1.5rem;
+  }
+
+  .pt3 {
+      font-size: 1rem;
+      line-height: 1.3rem;
+      max-width: 90%; /* Máximo centrado y legibilidad */
+  }
+
+  .card-1 {
+      width: 95%; /* Uso casi total del ancho */
+      margin-bottom: 2rem;
+  }
+
+  .image-center {
+      padding-bottom: 1.5rem; /* Menos espacio en móvil */
+  }
+}
