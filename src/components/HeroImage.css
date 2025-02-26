@@ -1,151 +1,133 @@
-/*.hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.hero-text {
-    display: flex;
-    justify-content: left;
-    padding: 0 0 0 240px;
-    font-size: 1rem;
-    margin-top: 200px;
-    font-weight: 700;
-
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero-image {
-    flex: 1;
-    background-image: url('/public/images/xl-hero-desktop_2021.png');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    background-color: rgb(212, 233, 226, 1);
+  flex: 1;
+  background-image: url('/public/images/xl-hero-desktop_2021.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-color: rgba(212, 233, 226, 1);
+}
+
+.hero-text {
+  display: flex;
+  justify-content: left;
+  padding: 140px 0 20px 240px; /* Espacio arriba, abajo y izquierda */
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.hero-text h2 {
+  line-height: 1.2;
+  margin: 0; /* Eliminamos márgenes por defecto */
 }
 
 .hero-subtext {
-    font-size: 1rem;
-    padding: 0 0 0 240px;
-    
+  font-size: 1rem;
+  padding-left: 240px;
 }
 
-.join-button {    
-    padding: 5px 10px;
-    background-color: #017143;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin: 20px 0;
+.hero-subtext p {
+  margin: 0;
 }
 
 .hero-container-2 {
-    
-    font-size: 1rem;
-    padding: 0 0 0 240px;
+  font-size: 1rem;
+  padding-left: 240px;
+  padding-bottom: 140px;
 }
-*/
 
-/* HeroImage.css */
-.hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .hero-image {
-    flex: 1;
-    background-image: url('/public/images/xl-hero-desktop_2021.png');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    background-color: rgba(212, 233, 226, 1);
-  }
-  
-  .hero-text {
-    display: flex;
-    justify-content: left;
-    padding: 0 0 0 240px;
-    font-size: 1rem;
-    margin-top: 200px;
-    font-weight: 700;
-  }
-  
-  .hero-text h2 {
-    margin: 0;
-    line-height: 1.2;
-  }
-  
-  .hero-subtext {
-    font-size: 1rem;
-    padding: 0 0 0 240px;
-  }
-  
-  .hero-subtext p {
-    margin: 0;
-  }
-  
+.join-button-h {
+  padding: 8px 20px;
+  background-color: #017143;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.join-link {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Media Queries optimizados */
+@media (max-width: 1024px) {
+  .hero-text,
+  .hero-subtext,
   .hero-container-2 {
-    font-size: 1rem;
-    padding: 0 0 0 240px;
-  }
-  
-  .join-button {
-    padding: 5px 10px;
-    background-color: #017143;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin: 20px 0;
-  }
-  
-  .join-link {
-    color: #000;
-    text-decoration: none;
-  }
-  
-  /* Responsividad ligera */
-  @media (max-width: 1024px) {
-    .hero-text,
-    .hero-subtext,
-    .hero-container-2 {
       padding-left: 150px;
-    }
   }
-  
-  @media (max-width: 768px) {
-    .hero-text,
-    .hero-subtext,
-    .hero-container-2 {
-      padding-left: 100px;
-    }
-  
-    .hero-text {
-      margin-top: 150px;
-    }
-  
-    .hero-text h2 {
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+      flex-direction: column; /* Apilamos imagen y texto en móvil */
+      height: auto; /* Permitimos altura dinámica */
+  }
+
+  .hero-image {
+      flex: none;
+      width: 100%;
+      height: 50vh; /* Reducimos altura de la imagen */
+  }
+
+  .hero-text,
+  .hero-subtext,
+  .hero-container-2 {
+      padding-left: 20px; /* Padding más pequeño y uniforme */
+  }
+
+  .hero-text {
       font-size: 1.5rem;
-    }
+      margin-top: 20px; /* Ajustamos margen superior */
   }
-  
-  @media (max-width: 480px) {
-    .hero-text,
-    .hero-subtext,
-    .hero-container-2 {
-      padding-left: 50px;
-    }
-  
-    .hero-text {
-      margin-top: 100px;
-    }
+
+  .hero-subtext {
+      font-size: 0.9rem;
   }
+
+  .join-button {
+      font-size: 0.9rem;
+      padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+      font-size: 1.25rem;
+  }
+
+  .hero-subtext,
+  .hero-container-2 {
+      font-size: 0.85rem;
+  }
+
+  .hero-image {
+      height: 40vh; /* Más compacto en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+      padding: 15px 0 15px 20px; /* Espacio vertical más pequeño */
+      font-size: 1.5rem;
+      margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+      padding: 10px 0 10px 20px; /* Aún más compacto */
+      font-size: 1.25rem;
+  }
+}

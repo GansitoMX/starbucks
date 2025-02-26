@@ -54,7 +54,7 @@ const HeroImage = () => {
           <p>Join now to start earning Rewards.</p>
         </div>
         <div className="hero-container-2">
-          <button className="join-button">Join now</button>
+          <button className="join-button-h">Join now</button>
           <br />
           <span>
             Or{' '}
