@@ -3,37 +3,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Aseguro que ocupe todo el ancho */
-  max-width: 100%; /* Evita cualquier restricción */
-  overflow: hidden; /* Evita desbordamiento */
-  margin: 0; /* Elimino márgenes que puedan interferir */
-  padding: 0; /* Elimino paddings del contenedor padre */
+  width: 100%; /* Ancho completo */
+  max-width: 100%; /* Evita que supere el viewport */
+  overflow-x: hidden; /* Elimina desbordamiento horizontal */
+  margin: 0; /* Sin márgenes que puedan causar espacio */
+  padding: 0; /* Sin paddings en el contenedor padre */
+  box-sizing: border-box; /* Incluye paddings y bordes en el ancho */
 }
 
 /* Imagen del hero */
 .hero-image {
   flex: 1;
   background-image: url('/public/images/xl-hero-desktop_2021.png');
-  background-size: cover; /* Cubre todo el contenedor */
+  background-size: cover;
   background-position: center;
   height: 100vh; /* Altura completa en escritorio */
   background-color: rgba(212, 233, 226, 1);
-  width: 100%; /* Forzamos que ocupe el ancho completo */
+  width: 100%; /* Ancho completo */
+  max-width: 100%; /* Limita al contenedor */
+  margin: 0; /* Sin márgenes */
+  padding: 0; /* Sin paddings */
 }
 
 /* Texto principal */
 .hero-text {
   display: flex;
   justify-content: left;
-  padding: 280px 0 20px 240px; /* Espacio original en escritorio */
+  padding: 280px 0 20px 240px; /* Espacio original */
   font-size: 2rem;
   font-weight: 600;
-  width: 100%; /* Aseguro que pueda expandirse */
-  box-sizing: border-box; /* Incluye padding en el ancho */
-}
-
-.hero-text h2 {
-  line-height: 1.2;
+  width: 100%; /* Ancho completo */
+  max-width: 100%; /* Limita al contenedor */
+  box-sizing: border-box; /* Evita que padding desborde */
   margin: 0;
 }
 
@@ -41,11 +42,9 @@
 .hero-subtext {
   font-size: 1rem;
   padding-left: 240px; /* Espacio original */
-  width: 100%; /* Ocupa todo el ancho disponible */
+  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
-}
-
-.hero-subtext p {
   margin: 0;
 }
 
@@ -55,7 +54,9 @@
   padding-left: 240px;
   padding-bottom: 280px; /* Espacio original */
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
+  margin: 0;
 }
 
 /* Botón de unirse */
@@ -77,12 +78,20 @@
   text-decoration: none;
 }
 
-/* Media Queries optimizados para pantallas pequeñas */
+/* Ajuste global para evitar desbordamiento */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita desbordamiento en toda la página */
+}
+
+/* Media Queries para móviles */
 
 /* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
   .hero-text {
-    padding: 200px 0 20px 150px; /* Reduzco padding */
+    padding: 200px 0 20px 150px;
     font-size: 1.75rem;
   }
 
@@ -96,45 +105,52 @@
   }
 }
 
-/* Móviles y tablets pequeñas (max-width: 768px) */
+/* Móviles (max-width: 768px) */
 @media (max-width: 768px) {
   .hero-container {
-    flex-direction: column; /* Apilo en filas */
-    height: auto; /* Altura dinámica */
-    width: 100%; /* Aseguro ancho completo */
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Refuerzo contra desbordamiento */
   }
 
   .hero-image {
     flex: none;
-    width: 100%; /* Ocupa todo el ancho */
-    height: 50vh; /* Altura reducida */
-    background-size: cover; /* Aseguro que la imagen cubra */
+    width: 100%;
+    max-width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
   }
 
   .hero-text {
-    padding: 20px 0 15px 20px; /* Padding uniforme */
+    padding: 20px 0 15px 20px;
     font-size: 1.5rem;
     justify-content: center;
     text-align: center;
-    width: 100%; /* Ancho completo */
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-subtext {
-    padding: 0 20px; /* Padding simétrico */
+    padding: 0 20px; /* Simétrico */
     font-size: 0.9rem;
     text-align: center;
     width: 100%;
+    max-width: 100%;
   }
 
   .hero-container-2 {
-    padding: 0 20px 40px 20px; /* Padding ajustado */
+    padding: 0 20px 40px 20px;
     text-align: center;
     width: 100%;
+    max-width: 100%;
   }
 
   .join-button-h {
     margin: 15px auto;
-    display: block; /* Centramos el botón */
+    display: block;
   }
 }
 
@@ -146,7 +162,7 @@
   }
 
   .hero-subtext {
-    padding: 0 15px; /* Simétrico */
+    padding: 0 15px;
     font-size: 0.85rem;
   }
 
