@@ -1,3 +1,4 @@
+/* Tu CSS original sigue igual para pantallas grandes */
 .cash-or-card1 {
     padding-top: 6.4rem;
 }
@@ -64,8 +65,6 @@
     vertical-align: top;
     padding-bottom: 0;
     width: 33.33333%;
-    padding-bottom: 0;
-    
 }
 
 .flex-md {
@@ -73,14 +72,12 @@
     text-align: left;
     padding-right: 2.4rem;
     padding-left: 2.4rem;
-
 }
 
 .image-cellphone {
     max-width: 128px;
     margin: 0;
     flex-shrink: 0;
-
 }
 
 .sb-image {
@@ -90,7 +87,7 @@
 }
 
 .card-content-textleft {
-   text-align: left; 
+    text-align: left; 
 }
 
 .separador {
@@ -101,11 +98,106 @@
 }
 
 .pt3 {
-
     font-weight: 400;
     font-size: 1.08rem;
     font-family: -apple-system, BlinkMacSystemFont, 
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 
     'Cantarell', 'Fira Sans', 'Droid Sans', 
     'Helvetica Neue', sans-serif;
+}
+
+/* Media Query para pantallas medianas (tablets, hasta 768px) */
+@media (max-width: 768px) {
+    .cash-or-card1 {
+        padding-top: 3.2rem; /* Reducimos el padding superior */
+    }
+
+    .text-centered-h2 {
+        width: 80%; /* Más ancho para que no se vea apretado */
+        margin-left: 10%; /* Centramos mejor */
+        padding-bottom: 2.2rem; /* Reducimos el padding inferior */
+    }
+
+    .gridItem1 {
+        width: 33.33333%; /* Aumentamos el ancho para que no quede tan pequeño */
+    }
+
+    .grid-image {
+        width: 50%; /* Ajustamos el ancho de las imágenes en la grilla */
+    }
+
+    .flex-md {
+        flex-direction: column; /* Pasamos de fila a columna */
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .image-cellphone {
+        max-width: 100px; /* Reducimos un poco el tamaño */
+    }
+
+    .sb-image {
+        max-width: 100%; /* Permitimos que la imagen ocupe más espacio */
+    }
+
+    .separador {
+        margin: 30px 0; /* Reducimos el margen */
+    }
+
+    .text-semibold {
+        font-size: 20px; /* Bajamos el tamaño de fuente */
+    }
+}
+
+/* Media Query para pantallas pequeñas (móviles, hasta 480px) */
+@media (max-width: 480px) {
+    .cash-or-card1 {
+        padding-top: 2rem; /* Más pequeño aún */
+    }
+
+    .sb-content-column {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .text-centered-h2 {
+        width: 90%; /* Casi todo el ancho */
+        margin-left: 5%;
+        padding-bottom: 1.6rem;
+    }
+
+    .gridItem1 {
+        width: 100%; /* Cada item ocupa todo el ancho */
+        display: block; /* Pasamos a bloque para apilarlos */
+    }
+
+    .grid-image {
+        width: 100%; /* Imágenes ocupan todo el ancho */
+        display: block;
+    }
+
+    .flex-md {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+    }
+
+    .image-cellphone {
+        max-width: 80px; /* Más pequeño para móviles */
+    }
+
+    .sb-image {
+        max-width: 100%;
+    }
+
+    .text-semibold {
+        font-size: 18px; /* Fuente más pequeña */
+    }
+
+    .pt3 {
+        font-size: 1rem; /* Ajustamos la fuente para mejor legibilidad */
+    }
+
+    .separador {
+        margin: 20px 0; /* Margen más pequeño */
+    }
 }

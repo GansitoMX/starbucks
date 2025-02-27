@@ -18,7 +18,7 @@
 .hero-text {
   display: flex;
   justify-content: left;
-  padding: 140px 0 20px 240px; /* Espacio arriba, abajo y izquierda */
+  padding: 280px 0 20px 240px; /* Espacio arriba, abajo y izquierda */
   font-size: 2rem;
   font-weight: 600;
 }
@@ -40,7 +40,7 @@
 .hero-container-2 {
   font-size: 1rem;
   padding-left: 240px;
-  padding-bottom: 140px;
+  padding-bottom: 280px;
 }
 
 .join-button-h {
