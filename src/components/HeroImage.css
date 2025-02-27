@@ -1,48 +1,55 @@
+/* Estilos generales */
 .hero-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   overflow: hidden;
+  max-width: 100%; /* Evita desbordamiento horizontal */
 }
 
+/* Imagen del hero */
 .hero-image {
   flex: 1;
   background-image: url('/public/images/xl-hero-desktop_2021.png');
   background-size: cover;
   background-position: center;
-  height: 100%;
+  height: 100vh; /* Altura completa en escritorio */
   background-color: rgba(212, 233, 226, 1);
 }
 
+/* Texto principal */
 .hero-text {
   display: flex;
   justify-content: left;
-  padding: 280px 0 20px 240px; /* Espacio arriba, abajo y izquierda */
+  padding: 280px 0 20px 240px; /* Espacio original */
   font-size: 2rem;
   font-weight: 600;
 }
 
 .hero-text h2 {
   line-height: 1.2;
-  margin: 0; /* Eliminamos márgenes por defecto */
+  margin: 0;
 }
 
+/* Subtexto */
 .hero-subtext {
   font-size: 1rem;
-  padding-left: 240px;
+  padding-left: 240px; /* Espacio original */
 }
 
 .hero-subtext p {
   margin: 0;
 }
 
+/* Contenedor secundario */
 .hero-container-2 {
   font-size: 1rem;
   padding-left: 240px;
-  padding-bottom: 280px;
+  padding-bottom: 280px; /* Espacio original */
 }
 
+/* Botón de unirse */
 .join-button-h {
   padding: 8px 20px;
   background-color: #017143;
@@ -55,79 +62,92 @@
   font-weight: 600;
 }
 
+/* Enlace */
 .join-link {
   color: #000;
   text-decoration: none;
 }
 
-/* Media Queries optimizados */
+/* Media Queries optimizados para responsive */
+
+/* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
-  .hero-text,
+  .hero-text {
+    padding: 200px 0 20px 150px; /* Reduzco padding superior e izquierdo */
+    font-size: 1.75rem; /* Ligeramente más pequeño */
+  }
+
   .hero-subtext,
   .hero-container-2 {
-      padding-left: 150px;
+    padding-left: 150px; /* Ajusto padding */
+  }
+
+  .hero-container-2 {
+    padding-bottom: 200px; /* Reduzco padding inferior */
   }
 }
 
+/* Móviles y tablets pequeñas (max-width: 768px) */
 @media (max-width: 768px) {
   .hero-container {
-      flex-direction: column; /* Apilamos imagen y texto en móvil */
-      height: auto; /* Permitimos altura dinámica */
+    flex-direction: column; /* Apilo imagen y texto en filas */
+    height: auto; /* Altura dinámica */
   }
 
   .hero-image {
-      flex: none;
-      width: 100%;
-      height: 50vh; /* Reducimos altura de la imagen */
-  }
-
-  .hero-text,
-  .hero-subtext,
-  .hero-container-2 {
-      padding-left: 20px; /* Padding más pequeño y uniforme */
+    flex: none;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 50vh; /* Reduzco altura para no dominar la pantalla */
   }
 
   .hero-text {
-      font-size: 1.5rem;
-      margin-top: 20px; /* Ajustamos margen superior */
+    padding: 20px 0 15px 20px; /* Padding más pequeño y uniforme */
+    font-size: 1.5rem; /* Tamaño ajustado */
+    justify-content: center; /* Centro el texto */
+    text-align: center; /* Alineación centrada */
   }
 
   .hero-subtext {
-      font-size: 0.9rem;
+    padding-left: 20px; /* Padding consistente */
+    font-size: 0.9rem;
+    text-align: center; /* Centro el subtexto */
   }
 
-  .join-button {
-      font-size: 0.9rem;
-      padding: 4px 8px;
+  .hero-container-2 {
+    padding-left: 20px;
+    padding-bottom: 40px; /* Reduzco el padding inferior */
+    text-align: center; /* Centro el contenido */
+  }
+
+  .join-button-h {
+    margin: 15px auto; /* Centro el botón */
+    display: block; /* Lo convierto en bloque para centrarlo */
   }
 }
 
+/* Móviles pequeños (max-width: 480px) */
 @media (max-width: 480px) {
   .hero-text {
-      font-size: 1.25rem;
+    padding: 15px 0 10px 15px; /* Más compacto */
+    font-size: 1.25rem; /* Tamaño más pequeño */
   }
 
-  .hero-subtext,
+  .hero-subtext {
+    padding-left: 15px;
+    font-size: 0.85rem;
+  }
+
   .hero-container-2 {
-      font-size: 0.85rem;
+    padding-left: 15px;
+    padding-bottom: 30px;
   }
 
   .hero-image {
-      height: 40vh; /* Más compacto en pantallas pequeñas */
+    height: 40vh; /* Más compacto aún */
   }
-}
 
-@media (max-width: 768px) {
-  .hero-text {
-      padding: 15px 0 15px 20px; /* Espacio vertical más pequeño */
-      font-size: 1.5rem;
-      margin-top: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-text {
-      padding: 10px 0 10px 20px; /* Aún más compacto */
-      font-size: 1.25rem;
+  .join-button-h {
+    padding: 6px 16px; /* Botón más pequeño */
+    font-size: 0.9rem;
   }
 }
