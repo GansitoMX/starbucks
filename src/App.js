@@ -10,22 +10,24 @@ import Keep from './components/Keep'
 import Questions from './components/Questions'
 import TermsConditions from './components/TermsConditions'
 import Footer from './components/Footer'
+import SkipLoading from './components/SkipLoading'
 
 class App extends Component {
     render() {
         return (
             <div>
-              <Navbar />
-              <StickyHeader />            
-              <HeroImage />
-              <Steps />
-              <Getfavorites />
-              <LearnMoreSection />
-              <CashOrCard />
-              <Keep />
-              <Questions />
-              <TermsConditions />
-              <Footer />
+                <SkipLoading />
+                <Navbar />
+                <StickyHeader />
+                <HeroImage />
+                <Steps />
+                <Getfavorites />
+                <LearnMoreSection />
+                <CashOrCard />
+                <Keep />
+                <Questions />
+                <TermsConditions />
+                <Footer />
             </div>
         )
     }
