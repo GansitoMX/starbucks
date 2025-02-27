@@ -3,28 +3,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  overflow: hidden;
-  max-width: 100%; /* Evita desbordamiento horizontal */
+  width: 100%; /* Aseguro que ocupe todo el ancho */
+  max-width: 100%; /* Evita cualquier restricción */
+  overflow: hidden; /* Evita desbordamiento */
+  margin: 0; /* Elimino márgenes que puedan interferir */
+  padding: 0; /* Elimino paddings del contenedor padre */
 }
 
 /* Imagen del hero */
 .hero-image {
   flex: 1;
   background-image: url('/public/images/xl-hero-desktop_2021.png');
-  background-size: cover;
+  background-size: cover; /* Cubre todo el contenedor */
   background-position: center;
   height: 100vh; /* Altura completa en escritorio */
   background-color: rgba(212, 233, 226, 1);
+  width: 100%; /* Forzamos que ocupe el ancho completo */
 }
 
 /* Texto principal */
 .hero-text {
   display: flex;
   justify-content: left;
-  padding: 280px 0 20px 240px; /* Espacio original */
+  padding: 280px 0 20px 240px; /* Espacio original en escritorio */
   font-size: 2rem;
   font-weight: 600;
+  width: 100%; /* Aseguro que pueda expandirse */
+  box-sizing: border-box; /* Incluye padding en el ancho */
 }
 
 .hero-text h2 {
@@ -36,6 +41,8 @@
 .hero-subtext {
   font-size: 1rem;
   padding-left: 240px; /* Espacio original */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  box-sizing: border-box;
 }
 
 .hero-subtext p {
@@ -47,6 +54,8 @@
   font-size: 1rem;
   padding-left: 240px;
   padding-bottom: 280px; /* Espacio original */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Botón de unirse */
@@ -68,86 +77,89 @@
   text-decoration: none;
 }
 
-/* Media Queries optimizados para responsive */
+/* Media Queries optimizados para pantallas pequeñas */
 
 /* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
   .hero-text {
-    padding: 200px 0 20px 150px; /* Reduzco padding superior e izquierdo */
-    font-size: 1.75rem; /* Ligeramente más pequeño */
+    padding: 200px 0 20px 150px; /* Reduzco padding */
+    font-size: 1.75rem;
   }
 
   .hero-subtext,
   .hero-container-2 {
-    padding-left: 150px; /* Ajusto padding */
+    padding-left: 150px;
   }
 
   .hero-container-2 {
-    padding-bottom: 200px; /* Reduzco padding inferior */
+    padding-bottom: 200px;
   }
 }
 
 /* Móviles y tablets pequeñas (max-width: 768px) */
 @media (max-width: 768px) {
   .hero-container {
-    flex-direction: column; /* Apilo imagen y texto en filas */
+    flex-direction: column; /* Apilo en filas */
     height: auto; /* Altura dinámica */
+    width: 100%; /* Aseguro ancho completo */
   }
 
   .hero-image {
     flex: none;
     width: 100%; /* Ocupa todo el ancho */
-    height: 50vh; /* Reduzco altura para no dominar la pantalla */
+    height: 50vh; /* Altura reducida */
+    background-size: cover; /* Aseguro que la imagen cubra */
   }
 
   .hero-text {
-    padding: 20px 0 15px 20px; /* Padding más pequeño y uniforme */
-    font-size: 1.5rem; /* Tamaño ajustado */
-    justify-content: center; /* Centro el texto */
-    text-align: center; /* Alineación centrada */
+    padding: 20px 0 15px 20px; /* Padding uniforme */
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%; /* Ancho completo */
   }
 
   .hero-subtext {
-    padding-left: 20px; /* Padding consistente */
+    padding: 0 20px; /* Padding simétrico */
     font-size: 0.9rem;
-    text-align: center; /* Centro el subtexto */
+    text-align: center;
+    width: 100%;
   }
 
   .hero-container-2 {
-    padding-left: 20px;
-    padding-bottom: 40px; /* Reduzco el padding inferior */
-    text-align: center; /* Centro el contenido */
+    padding: 0 20px 40px 20px; /* Padding ajustado */
+    text-align: center;
+    width: 100%;
   }
 
   .join-button-h {
-    margin: 15px auto; /* Centro el botón */
-    display: block; /* Lo convierto en bloque para centrarlo */
+    margin: 15px auto;
+    display: block; /* Centramos el botón */
   }
 }
 
 /* Móviles pequeños (max-width: 480px) */
 @media (max-width: 480px) {
   .hero-text {
-    padding: 15px 0 10px 15px; /* Más compacto */
-    font-size: 1.25rem; /* Tamaño más pequeño */
+    padding: 15px 0 10px 15px;
+    font-size: 1.25rem;
   }
 
   .hero-subtext {
-    padding-left: 15px;
+    padding: 0 15px; /* Simétrico */
     font-size: 0.85rem;
   }
 
   .hero-container-2 {
-    padding-left: 15px;
-    padding-bottom: 30px;
+    padding: 0 15px 30px 15px;
   }
 
   .hero-image {
-    height: 40vh; /* Más compacto aún */
+    height: 40vh;
   }
 
   .join-button-h {
-    padding: 6px 16px; /* Botón más pequeño */
+    padding: 6px 16px;
     font-size: 0.9rem;
   }
 }
