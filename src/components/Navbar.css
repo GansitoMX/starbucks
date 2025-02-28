@@ -1,189 +1,267 @@
 /* Base del Navbar */
 .navbar {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    color: #000;
-    padding: 2rem 0;
-    width: 100%;
-  }
-  
-  /* Contenedor principal */
-  .global-max-width {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
-  }
-  
-  /* Contenido del Navbar */
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/* Contenedor principal */
+.global-max-width {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* Contenido del Navbar */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alineo todo a la izquierda */
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Sección izquierda (logo + links + botones) */
+.navbar-logo {
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+/* Links de navegación (junto al logo) */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+/* Ajuste para que los enlaces no empujen demasiado */
+.navbar-links li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Cambio de color al pasar el mouse */
+.navbar-links a:hover {
+  color: #00754a;
+}
+
+/* Estilo para el enlace activo (línea verde debajo) */
+.navbar-links a.active {
+  color: #00754a;
+}
+
+.navbar-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -42px;
+  width: 100%;
+  height: 7px;
+  background-color: #00754a;
+}
+
+/* Botones (ahora a la izquierda después de los links) */
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-shrink: 0;
+  margin-left: 2rem; /* Espacio entre links y botones */
+}
+
+.find-store-link {
+  display: flex;
+  align-items: center;
+  color: #1e3932;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.find-store-link svg {
+  margin-right: 0.5rem;
+}
+
+.sign-button {
+  color: #000;
+  background: none;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.join-button-header {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Header Container */
+.header-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ícono de hamburguesa (visible solo en móviles) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/* Estilo del menú desplegable */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Sticky Header */
+.sticky-header {
+  display: flex;
+  align-items: center;
+  background-color: #1e3932;
+  color: #fff;
+  padding: 0 240px;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries para responsividad */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
   .navbar-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
+    justify-content: flex-start; /* Mantengo alineación a la izquierda */
   }
-  
-  /* Sección izquierda (logo + links) */
-  .navbar-logo {
-    flex-shrink: 0;
-    margin-right: 2rem;
-  }
-  
-  .navbar-logo img {
-    height: 40px;
-    width: 40px;
-    display: block;
-  }
-  
-  /* Links de navegación (junto al logo) */
-  .navbar-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 1.5rem;
-  }
-  
-  .navbar-links li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-links a {
-    text-decoration: none;
-    font-weight: 700;
-    color: #000;
-    position: relative; /* Necesario para la línea inferior */
-    transition: color 0.3s ease; /* Transición suave para el color */
-  }
-  
-  /* Cambio de color al pasar el mouse */
-  .navbar-links a:hover {
-    color: #00754a; /* Verde oscuro al pasar el mouse */
-  }
-  
-  /* Estilo para el enlace activo (línea verde debajo) */
-  .navbar-links a.active {
-    color: #00754a; /* Color del enlace activo */
-  }
-  
-  /* Línea verde debajo del enlace activo */
-  .navbar-links a.active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -42px; /* Distancia desde el texto */
-    width: 100%;
-    height: 7px; /* Grosor de la línea */
-    background-color: #00754a; /* Verde oscuro */
-  }
-  
-  /* Botones y enlace "Find a store" (a la derecha) */
+
   .navbar-buttons {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-    flex-shrink: 0;
-    margin-left: auto;
+    margin-left: 1.5rem; /* Reduzco ligeramente el margen */
   }
-  
-  .find-store-link {
-    display: flex;
-    align-items: center;
-    color: #1e3932;
-    text-decoration: none;
-    font-weight: 600;
+}
+
+/* Móviles (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 0;
   }
-  
-  .find-store-link svg {
-    margin-right: 0.5rem;
-  }
-  
-  .sign-button {
-    color: #000;
-    background: none;
-    border: 2px solid #000;
-    border-radius: 25px;
-    padding: 8px 20px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .join-button-header {
-    color: #fff;
-    background-color: #000;
-    border: 2px solid #000;
-    border-radius: 25px;
-    padding: 8px 20px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  /* Header Container */
-  .header-container {
+
+  .navbar-content {
     position: relative;
-    z-index: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Logo a la izquierda, hamburguesa a la derecha */
   }
-  
-  /* Media Queries para responsividad */
-  @media (max-width: 1024px) {
-    .navbar-content {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-  
-    .navbar-buttons {
-      margin-left: 0;
-      width: 100%;
-      justify-content: flex-start;
-    }
-  
-    .navbar-links {
-      margin-left: 0;
-    }
+
+  .hamburger {
+    display: flex;
   }
-  
-  @media (max-width: 768px) {
-    .navbar-links {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    .navbar-buttons {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .navbar-links a.active::after {
+    bottom: -5px; /* Ajusto para el menú vertical */
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    margin-left: 0; /* Sin margen extra en móviles */
   }
 
   .sticky-header {
-    display: flex;
-    align-items: center;   
-    background-color: #1e3932;
-    color: #fff;
-    padding: 0 240px;    
-    height: 50px;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    font-weight: 700;
-    /* Sombra mejorada: más pronunciada y natural */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 20px;
+    height: 45px;
+    font-weight: 600;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
 }
 
-/* Adaptación para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    .sticky-header {
-        padding: 0 20px; /* Reducimos el padding horizontal */
-        height: 45px;    /* Ligera reducción de altura para mejor proporción */
-        font-weight: 600; /* Suavizamos un poco el peso de la fuente */
-        /* Sombra ajustada para móviles, menos intensa */
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.1);
-    }
+/* Móviles pequeños (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar-logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamburger span {
+    width: 20px;
+    height: 2px;
+    margin: 2px 0;
+  }
 }

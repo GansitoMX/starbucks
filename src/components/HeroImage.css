@@ -29,34 +29,33 @@
 .hero-text {
   display: flex;
   justify-content: left;
-  padding: 280px 0 20px 240px; /* Espacio original */
   font-size: 2rem;
   font-weight: 600;
   width: 100%; /* Ancho completo */
   max-width: 100%; /* Limita al contenedor */
   box-sizing: border-box; /* Evita que padding desborde */
-  margin: 0;
+  margin-left: 15rem;
 }
 
 /* Subtexto */
 .hero-subtext {
+  display: flex;
+  justify-content: left;
   font-size: 1rem;
-  padding-left: 240px; /* Espacio original */
+  margin-left: 15rem; /* Espacio original */
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  margin: 0;
+  
 }
 
 /* Contenedor secundario */
 .hero-container-2 {
   font-size: 1rem;
-  padding-left: 240px;
-  padding-bottom: 280px; /* Espacio original */
+  margin-left: 15rem;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  margin: 0;
 }
 
 /* Botón de unirse */
@@ -79,13 +78,6 @@
 }
 
 /* Ajuste global para evitar desbordamiento */
-html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Evita desbordamiento en toda la página */
-}
-
 /* Media Queries para móviles */
 
 /* Tablets (max-width: 1024px) */
