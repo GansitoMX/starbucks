@@ -88,7 +88,11 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <div className="sticky-header">
+        STARBUCKS® REWARDS
+      </div>
     </header>
+
   );
 };
 
