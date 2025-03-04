@@ -81,8 +81,10 @@ const Navbar = () => {
                   </svg>
                   Find a store
                 </a>
+                <div className='flex-shrink-btns'>
                 <button className="sign-button">Sign in</button>
                 <button className="join-button-header">Join now</button>
+                </div>
               </div>
             </div>
           </div>
