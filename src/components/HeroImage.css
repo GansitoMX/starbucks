@@ -4,59 +4,47 @@
   justify-content: space-between;
   align-items: center;
   width: 100%; /* Ancho completo */
-  max-width: 100%; /* Evita que supere el viewport */
-  overflow-x: hidden; /* Elimina desbordamiento horizontal */
-  margin: 0; /* Sin márgenes que puedan causar espacio */
-  padding: 0; /* Sin paddings en el contenedor padre */
   box-sizing: border-box; /* Incluye paddings y bordes en el ancho */
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /* Imagen del hero */
 .hero-image {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   background-image: url('/public/images/xl-hero-desktop_2021.png');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 100vh; /* Altura completa en escritorio */
   background-color: rgba(212, 233, 226, 1);
-  width: 100%; /* Ancho completo */
-  max-width: 100%; /* Limita al contenedor */
-  margin: 0; /* Sin márgenes */
-  padding: 0; /* Sin paddings */
+  width: 100vw; /* Ancho completo */
+  padding-left: 15rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 /* Texto principal */
 .hero-text {
   display: flex;
-  justify-content: left;
-  font-size: 2rem;
-  font-weight: 600;
+  height: 100%;
   width: 100%; /* Ancho completo */
-  max-width: 100%; /* Limita al contenedor */
   box-sizing: border-box; /* Evita que padding desborde */
-  margin-left: 15rem;
+  
 }
 
 /* Subtexto */
 .hero-subtext {
   display: flex;
-  justify-content: left;
-  font-size: 1rem;
-  margin-left: 15rem; /* Espacio original */
   width: 100%;
-  max-width: 100%;
   box-sizing: border-box;
   
 }
 
 /* Contenedor secundario */
 .hero-container-2 {
-  font-size: 1rem;
-  margin-left: 15rem;
   width: 100%;
-  max-width: 100%;
   box-sizing: border-box;
+  
 }
 
 /* Botón de unirse */
@@ -70,12 +58,14 @@
   font-size: 1rem;
   margin: 20px 0;
   font-weight: 600;
+  
 }
 
 /* Enlace */
 .join-link {
   color: #000;
   text-decoration: none;
+  
 }
 
 /* Ajuste global para evitar desbordamiento */
