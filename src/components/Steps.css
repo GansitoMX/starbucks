@@ -85,16 +85,19 @@
 
 /* Responsividad optimizada */
 @media (max-width: 1024px) {
-  .multiThumbnailsRow {
-      margin: 0 4vw;
-  }
 
   .card-1 {
-      margin-right: 2rem;
+      padding-bottom: 3rem;
   }
 
   .pt3 {
       max-width: 95%; /* Ajuste para pantallas medianas */
+  }
+  .multiThumbnailsRow-ole {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
