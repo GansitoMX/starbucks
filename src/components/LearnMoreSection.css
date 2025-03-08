@@ -207,3 +207,56 @@
 .close-button:hover {
     transform: scale(1.5);
 }
+
+
+@media (max-width: 1024px) {
+    .multiThumbnailsRow {
+        align-items: center;
+        margin: 0 5vw;
+    }
+
+    .flex-column {
+        width: 50%;
+    }
+
+    .card-image {
+        max-width: 50%;
+    }
+    .card-content-text {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .multiThumbnailsRow {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 5vw;
+    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .card-image {
+        max-width: 50%;
+    }
+    .card-content-text {
+        text-align: left;
+        padding: 0;
+    }
+    .text-centered-p{
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .image-cursor-pointer {
+        text-align: left;
+        padding-bottom: 0;
+    }
+}
