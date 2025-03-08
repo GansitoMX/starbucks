@@ -45,7 +45,7 @@
 }
 
 .image-cursor-pointer {
-    margin: 0 auto;
+    
     padding-bottom: 2.4rem;
     cursor: pointer;
     text-align: center;
@@ -244,19 +244,31 @@
     }
 
     .card-image {
-        max-width: 50%;
+        max-width: 60%;
     }
     .card-content-text {
         text-align: left;
         padding: 0;
     }
-    .text-centered-p{
+    .text-centered-p-2{
         padding-left: 0;
         text-align: left;
+    }
+    .text-centered-p{
+        padding: 0;
     }
 
     .image-cursor-pointer {
         text-align: left;
         padding-bottom: 0;
+    }
+}
+
+@media (max-width: 480px){
+    .text-centered {
+        width: 100%;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

@@ -75,7 +75,7 @@ const LearnMoreSection = () => {
                             </div>
                             <div className="card-content-text">
                                 <h3 className="heading-text-semibold">{card.title}</h3>
-                                <p className="text-centered-p">{card.description}</p>
+                                <p className="text-centered-p-2">{card.description}</p>
                                 <button className="text-link" onClick={() => openModal(index)}>
                                     Learn More
                                 </button>
