@@ -44,7 +44,6 @@
   flex-direction: column;
   width: 33.3333%;
   padding-bottom: 0;
-  margin-right: 3.5rem;
 }
 
 .image-center {
@@ -87,17 +86,36 @@
 @media (max-width: 1024px) {
 
   .card-1 {
+      display: flex;
+      flex-direction: row;
       padding-bottom: 3rem;
+      width: 90%;
+      
+      overflow: hidden;
+      
   }
 
-  .pt3 {
-      max-width: 95%; /* Ajuste para pantallas medianas */
+  .card-content{
+      text-align: left;
   }
+
+  .sb-imageFade__show {
+    width: 55px;
+    padding-right: 1rem;
+  }
+  
   .multiThumbnailsRow-ole {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
     flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .pt3 {
+    padding-top: 1rem;
+    margin: 0;
   }
 }
 
