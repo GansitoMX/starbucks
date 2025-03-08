@@ -271,4 +271,7 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .modal-content {
+        max-width: 50%;
+    }
 }
