@@ -77,10 +77,9 @@
   }
 
   .hero-image {
-
-    background-position: right;
+      
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 6rem;
   }
 
   .hero-container-2 {
@@ -155,7 +154,7 @@
 
   .hero-image {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
   }
 
   .join-button-h {
