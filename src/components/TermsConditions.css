@@ -61,6 +61,41 @@
     margin-bottom: 1.4rem;
 }
 
+@media (max-width: 480px) {
+    .md-flex-text {
+        display: block;
+    }
+    .earning-stars{
+        width: 100%;
+    }
+    .termsOfUse{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-column {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+    .py-text {
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+    }
+    .sb-content-column-inner {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+    .earning-stars{
+        width: 100%;
+    }
+    .termsOfUse{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
 
 
 

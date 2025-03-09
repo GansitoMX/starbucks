@@ -31,3 +31,22 @@
 .pb3 {
     padding-bottom: 1.6rem;
 }
+
+@media (max-width: 480px) {
+    .q-section {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+    .sb-content-column {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .content-column-inner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .offset {
+        width: 100%;
+        margin-left: 0;
+    }
+}
