@@ -3,14 +3,14 @@
     padding-bottom: 7.4rem;
 }
 
-.content-columnInner{
+.content-columnInner {
     box-sizing: border-box;
 }
 
 .text-centered {
     width: 50%;
     margin-left: 25%;
-    text-align: center;    
+    text-align: center;
 }
 
 .heading-text-semibold {
@@ -45,7 +45,7 @@
 }
 
 .image-cursor-pointer {
-    
+
     padding-bottom: 2.4rem;
     cursor: pointer;
     text-align: center;
@@ -53,11 +53,11 @@
 }
 
 .card-image {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
     height: auto;
     max-width: 50%;
     border: 0;
@@ -66,12 +66,13 @@
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .card-content-text {
@@ -97,7 +98,7 @@
     color: #006241;
     text-decoration: underline;
     font-size: 1.1rem;
-    font-weight: 500;   
+    font-weight: 500;
 }
 
 /*Modal*/
@@ -123,6 +124,21 @@
     position: relative;
     max-width: 500px;
     width: 90%;
+    opacity: 1;
+    animation-name: fadeInResize;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeInResize {
+    from {
+        scale: 0
+    }
+    to {
+        scale: 1;
+    }
+    
 }
 
 .modal-title {
@@ -178,8 +194,9 @@
     border-radius: 50%;
     transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+
 .arrow:hover {
-    background: #dddddd; 
+    background: #dddddd;
 }
 
 .ok-button {
@@ -222,6 +239,7 @@
     .card-image {
         max-width: 50%;
     }
+
     .card-content-text {
         padding: 0;
     }
@@ -246,15 +264,18 @@
     .card-image {
         max-width: 60%;
     }
+
     .card-content-text {
         text-align: left;
         padding: 0;
     }
-    .text-centered-p-2{
+
+    .text-centered-p-2 {
         padding-left: 0;
         text-align: left;
     }
-    .text-centered-p{
+
+    .text-centered-p {
         padding: 0;
     }
 
@@ -264,12 +285,13 @@
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .text-centered {
         width: 100%;
         margin: 0;
         padding-right: 1rem;
     }
+
     .modeal-overlay {
         position: fixed;
         top: 0px;
@@ -277,14 +299,17 @@
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.7);
-        display: flex;    ;
+        display: flex;
         justify-content: flex-start;
         align-items: center;
         z-index: 1000;
     }
+
     .modal-content {
         max-width: 82%;
+
     }
+
     .modal-image {
         width: 90%;
         height: auto;
