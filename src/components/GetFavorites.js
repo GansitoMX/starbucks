@@ -15,7 +15,7 @@ const GetFavorites = () => {
   return (
     <div className="global-get-favorites">
       <div className="px3">
-        <h2 className="sb-heading">Get your favorites for free</h2>
+        <h2 className="sb-heading1">Get your favorites for free</h2>
       </div>
       <div>
         <div
@@ -61,7 +61,7 @@ const GetFavorites = () => {
                     />
 
                     <div className="tab-content-section">
-                      <h3 className="sb-heading">Customize your drink</h3>
+                      <h3 className="sb-heading1">Customize your drink</h3>
                       <p className="p-tabs1">
                         Make your drink just right with an extra
                         espresso shot or a dash of your favorite syrup.
@@ -87,7 +87,7 @@ const GetFavorites = () => {
                     />
 
                     <div className="tab-content-section">
-                      <h3 className="sb-heading">Brewed hot or iced coffee or tea,<br></br>
+                      <h3 className="sb-heading1">Brewed hot or iced coffee or tea,<br></br>
                         bakery item, packaged snack and more</h3>
                       <p className="p-tabs1">
                         Treat yourself to an iced coffee,
@@ -114,7 +114,7 @@ const GetFavorites = () => {
                     />
 
                     <div className="tab-content-section">
-                      <h3 className="sb-heading">Handcrafted drink
+                      <h3 className="sb-heading1">Handcrafted drink
                         (Cold<br></br> Brew, lattes and more) or hot breakfast
                       </h3>
                       <p className="p-tabs1">
@@ -143,7 +143,7 @@ const GetFavorites = () => {
                     />
 
                     <div className="tab-content-section">
-                      <h3 className="sb-heading">Sandwich, protein
+                      <h3 className="sb-heading1">Sandwich, protein
                         box or at-home coffee
                       </h3>
                       <p className="p-tabs1">
@@ -171,7 +171,7 @@ const GetFavorites = () => {
                     />
 
                     <div className="tab-content-section">
-                      <h3 className="sb-heading">Select Starbucks® merchandise
+                      <h3 className="sb-heading1">Select Starbucks® merchandise
                       </h3>
                       <p className="p-tabs1">
                         Take home a signature cup, drink tumbler or your choice

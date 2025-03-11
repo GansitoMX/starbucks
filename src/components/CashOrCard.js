@@ -9,7 +9,7 @@ class CashOrCard extends Component {
                     <div className="sb-content-column">
                         <div className="sb-content-columnInner">
                             <div className="text-centered-h2">
-                                <h2 className="sb-heading">
+                                <h2 className="sb-heading-coc">
                                     Cash or card, you earn Stars
                                 </h2>
                                 <p>
@@ -38,7 +38,7 @@ class CashOrCard extends Component {
                                             </img>
                                         </div>
                                         <div className="card-content-textleft">
-                                            <h3 className="sb-heading">
+                                            <h3 className="sb-heading-coc">
                                                 Scan and pay separately
                                             </h3>
                                             <p className="pt3">Use cash or
@@ -57,7 +57,7 @@ class CashOrCard extends Component {
                                             </img>
                                         </div>
                                         <div className="card-content-textleft">
-                                            <h3 className="sb-heading">
+                                            <h3 className="sb-heading-coc">
                                                 Scan and pay separately
                                             </h3>
                                             <p className="pt3">Check-out
@@ -91,7 +91,7 @@ class CashOrCard extends Component {
                                             </img>
                                         </div>
                                         <div className="card-content-textleft">
-                                            <h3 className="sb-heading">
+                                            <h3 className="sb-heading-coc">
                                             Preload
                                             </h3>
                                             <p className="pt3">To save time 
@@ -113,7 +113,7 @@ class CashOrCard extends Component {
                                             </img>
                                         </div>
                                         <div className="card-content-textleft">
-                                            <h3 className="sb-heading">
+                                            <h3 className="sb-heading-coc">
                                                 Register your gift card
                                             </h3>
                                             <p className="pt3">Then use it 
