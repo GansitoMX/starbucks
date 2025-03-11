@@ -268,7 +268,6 @@
     .text-centered {
         width: 100%;
         margin: 0;
-        padding-left: 1rem;
         padding-right: 1rem;
     }
     .modeal-overlay {
@@ -284,7 +283,7 @@
         z-index: 1000;
     }
     .modal-content {
-        max-width: 45%;
+        max-width: 82%;
     }
     .modal-image {
         width: 90%;

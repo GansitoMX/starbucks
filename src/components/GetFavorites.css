@@ -188,7 +188,7 @@ button {
         display: flex;
         justify-content: space-around;
         position: relative;
-        width: 100%;
+        width: 95%;
     }
     .p-tabs1 {
         padding-left: 1rem;
@@ -225,6 +225,11 @@ button {
 
     .sbtabs-1 {
         padding: 1rem 0.2rem;
+    }
+    .sb-heading {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
     }
 
 }

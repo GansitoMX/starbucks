@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import './CashOrCard.css';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -67,6 +68,7 @@ const Navbar = () => {
                   </a>
                 </li>
               </ul>
+              <hr className='separador'></hr>
               <div className="navbar-buttons">
                 <a href="#findAstore" className="find-store-link">
                   <svg
@@ -81,6 +83,7 @@ const Navbar = () => {
                   </svg>
                   Find a store
                 </a>
+
                 <div className='flex-shrink-btns'>
                 <button className="sign-button">Sign in</button>
                 <button className="join-button-header">Join now</button>

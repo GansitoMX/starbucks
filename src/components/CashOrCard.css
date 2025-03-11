@@ -127,12 +127,14 @@
     }
 
     .flex-md {
-        flex-direction: column; /* Pasamos de fila a columna */
+        flex-direction: row; /* Pasamos de fila a columna */
         padding-right: 1.2rem;
         padding-left: 1.2rem;
+        padding-bottom: 4rem;
     }
 
     .image-cellphone {
+        padding-right: 1rem;
         max-width: 100px; /* Reducimos un poco el tamaño */
     }
 
@@ -146,6 +148,13 @@
 
     .text-semibold {
         font-size: 20px; /* Bajamos el tamaño de fuente */
+    }
+    .card-content-textleft {
+        text-align: left !important; /* Centramos el texto */
+    }
+    .sb-heading{
+        text-align: left;
+        padding-left: 0;
     }
 }
 
@@ -177,11 +186,14 @@
     }
 
     .flex-md {
+        display: flex;
+        flex-direction: row;
         padding-right: 0.8rem;
         padding-left: 0.8rem;
     }
 
     .image-cellphone {
+        padding-right: 1rem;
         max-width: 80px; /* Más pequeño para móviles */
     }
 
@@ -200,4 +212,14 @@
     .separador {
         margin: 20px 0; /* Margen más pequeño */
     }
+
+    .card-content-textleft {
+    
+        text-align: left !important;
+    }
+
+.sb-heading{
+    text-align: left;
+    padding-left: 0;
+}
 }
